@@ -1,0 +1,251 @@
+:root{
+    --primary-color: #5D6657;
+    --secondary-color: #B29E7F;
+    --tertiary-color: #BBBEC1;
+    --element-color: #F2EFE9;
+    --secondary-about: #F1E5D2;
+    --bg-opacity: linear-gradient(0deg, rgba(93, 102, 87, 0.35), rgba(93, 102, 87, 0.35));
+    --text-color: #393939;
+}
+body{
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif !important;
+}
+img{
+    object-fit:cover
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+.text-primary{
+    color: #5D6657 !important;
+}
+.text-secondary-300{
+    color: var(--secondary-color) !important;
+}
+.text-secondary-200{
+    color: var(--element-color) !important;
+}
+.text-tertiary{
+    color: var(--tertiary-color) !important;
+}
+.bg-primary{
+    background-color: var(--primary-color) !important;
+}
+.bg-secondary-300{
+    background-color: var(--secondary-color) !important;
+}
+.bg-secondary-200{
+    background-color: var(--element-color) !important;
+}
+.bg-secondary-250{
+    background-color: var(--secondary-about) !important;
+}
+.bg-tertiary{
+    background-color: var(--tertiary-color) !important;
+}
+.bg-text{
+    background-color: var(--text-color) !important;
+}
+.border-primary{
+    border-color: var(--text-color) !important;
+}
+.fw-semibold{
+    font-weight: 500;
+}
+.w-max{
+    width: max-content;
+}
+.w-35{
+    width: 35%;
+}
+section.mt-5{
+    margin-top: 90px !important;
+}
+.navbar-brand img{
+    width: 50px;
+}
+nav a{
+    color: var(--text-color) !important;
+    font-weight: 500;
+}
+nav li{
+    margin: 0 15px;
+}
+header{
+    background: var(--bg-opacity), url("../img/spacejoy-RqO6kwm4tZY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+header.about{
+    background: var(--bg-opacity), url("../img/people-renovating-the-house-1.jpg");
+    height: 250px;
+    background-position: 23% 75%;
+}
+.services-area .img-box{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.services-area .img-box:hover img{
+    transform: scale(1.3);
+}
+.services-area .img-box img{
+    height: 234px;
+    transition: 0.8s ease-out;
+}
+.services-area .icon-box{
+    width: 48px;
+    height: 40px;
+}
+.services-area .text-box{
+    width: 85%;
+    position: relative;
+    top: -20px;
+}
+.action-area{
+    clip-path: polygon(0 0,100% 12%,100% 88%,0 100%);
+    background: linear-gradient(90deg, rgba(93, 102, 87, 0.69) 32.22%, rgba(0, 0, 0, 0) 58.75%), url("../img/clay-banks-V5kxrlY6Oy0-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.work-area img{
+    height: 354px;
+}
+.work-area .work{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.work-area .work .text-box{
+    top: 85%;
+    left: 25px;
+    font-size: 14px;
+    transition: 2s;
+    width: 0;
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.work-area .work:hover img{
+    transform: scale(1.3);
+}
+.work-area .work img{
+    transition: 0.8s;
+}
+.work-area .work:hover .text-box{
+    display: block !important;
+    width: max-content;
+    opacity: 1;
+    transform:translateX(0);
+    transition: 0.8s;
+}
+.carousel-control-next-icon{
+    background-image: url('../img/next.png') !important;
+}
+.carousel-control-prev-icon{
+    background-image: url('../img/prev.png') !important;
+}
+.carousel-control-next, .carousel-control-prev {
+    position: relative;
+    display: inline-block;
+    width: max-content;
+    opacity: 1;
+    margin-top: 20px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    position: relative;
+    background-size: contain !important;
+}
+.carousel-control-next-icon::after, .carousel-control-prev-icon::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    opacity: 0.5;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    z-index: -1;
+}
+.carousel-control-next-icon::after {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.carousel-control-prev-icon::after {
+    top: 44%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.review-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.right-top,.left-top{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    opacity: 0.4;
+    width: 35%;
+}
+.right-top{
+    right: 0;
+}
+.left-top{
+    rotate: 180deg;
+}
+.about-text-box{
+    position: relative;
+    top: 28%;
+}
+.about-text{
+    padding: 15px;
+}
+.about-text-box p{
+    text-align: justify;
+}
+.mission p{
+    text-align: justify;
+}
+.mission .icon-box{
+    width: 60px;
+    height: 50px;
+}
+.mission .icon-box img{
+    object-fit: contain
+}
+.mission .icon-box.box1{
+    background-color: #FCC9CD;
+}
+.mission .icon-box.box2{
+    background-color: #D0E4FF;
+}
+.mission .icon-box.box3{
+    background-color: #F6ECD8;
+}
+@media screen and (min-height: 800px) {
+    header{
+        height: 800px;
+    }
+}
+@media screen and (max-width: 992px){
+    .w-35,.w-50,.w-25,.w-75{
+        width: 100% !important;
+    }
+    .sm-row{
+        flex-wrap: wrap-reverse;
+    }
+}
+@media screen and (max-width: 1200px){
+    .about-text-box{
+        top: 0 !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .sm-hidden{
+        display: none !important;
+    }
+}

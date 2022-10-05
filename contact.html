@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Our services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--header-->
+      <header class="d-flex align-items-center about">
+        <div class="container text-white">
+            <h1 class="mb-0 fw-bold">Contact Us</h1>
+        </div>
+      </header>
+
+
+      <section class="mt-5 container">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=1099%20W%20133rd%20Way%20Westminster,%20CO%2080234&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:400px;width:100%;}</style></div></div>
+      </section>
+      <!--section-->
+      <section class="mt-5 mb-5 container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 my-2">
+                <h2 class="fw-bold">Looking for the best painter in town?</h2>
+                <p>Get in touch with us now and book your appointment for a free consultation. </p>
+                <div class="mt-3">
+                    <div class="my-1 d-flex">
+                        <iconify-icon icon="clarity:map-marker-solid" width="35"></iconify-icon>
+                        <div class="ms-3">
+                            <h6 class="fw-bold">Address</h6>
+                            <p class="text-tertiary">1099 W 133rd Way Westminster, CO 80234</p>
+                        </div>
+                    </div>
+                    <div class="my-1 d-flex">
+                        <iconify-icon icon="bxs:phone" width="35"></iconify-icon>
+                        <div class="ms-3">
+                            <h6 class="fw-bold">Call us</h6>
+                            <p class="text-tertiary">+1 720 843 6975</p>
+                        </div>
+                    </div>
+                    <div class="my-1 d-flex">
+                        <iconify-icon icon="ant-design:field-time-outlined" width="35"></iconify-icon>
+                        <div class="ms-3">
+                            <h6 class="fw-bold">Business hour</h6>
+                            <p class="text-tertiary">Mon to Sat 9am - 5pm</p>
+                        </div>
+                    </div>
+                    <div class="my-1">
+                        <p class="fw-bold">Social media :</p>
+                        <div class="d-flex">
+                            <a target="_blank" href="https://www.facebook.com/MoGPaints/"><iconify-icon icon="akar-icons:facebook-fill" width="35" class="text-primary"></iconify-icon></a>
+                            <a target="_blank" href="https://www.instagram.com/mogpainting/"><iconify-icon icon="entypo-social:instagram-with-circle" width="35" class="text-primary mx-5"></iconify-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 my-2">
+                <form action="contact_process.php" method="post" class="form-contact contact_form" id="contactForm" novalidate="novalidate">
+                    <div class="col-12">
+                        <input class="form-control" type="hidden" name="to" value="email@email.net">
+                        <input class="form-control py-2 px-4" type="text" placeholder="Your Name" name="name" required>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <input class="form-control py-2 px-4" type="email" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <input class="form-control py-2 px-4" type="text" placeholder="Subject" name="subject" required>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <textarea class="form-control py-2 px-4" rows="6" placeholder="Enter your message here..." name="message" required></textarea>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="row">
+                            <div class="col-auto">
+                                <button class="btn bg-primary text-white rounded px-5 fw-semiBold" type="Submit" id="submit-btn"> <span class="color-white fw-600">Send</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+
+      <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-primary text-white" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <section class="mt-5 bg-primary py-5 position-relative">
+        <div class="container">
+          <h2 class="w-35 mx-auto fw-bold text-center text-white">We’re here to Paint! Call Us Today!</h2>
+          <a href="#" class="mt-4 btn rounded py-2 px-4 text-white bg-secondary-300 d-flex align-items-center w-max mx-auto">
+            <iconify-icon icon="bxs:phone" class="me-3"></iconify-icon>
+            +1 720 843 6975
+          </a>
+        </div>
+        <img src="./img/topo--white-top-right.png" alt="" class="right-top">
+        <img src="./img/topo--white-top-right.png" alt="" class="left-top">
+      </section>
+
+      <footer class="bg-secondary-200 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 my-2">
+              <h5 class="fw-bold">About us</h5>
+              <img src="./img/logo.png" width="100" alt="">
+              <p class="fw-bold mt-3">MoG Painting</p>
+              <p>The Most Reliable Residential Painting Services in Colorado</p>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+              <h5 class="fw-bold">Links</h5>
+              <div class="mt-4">
+                <a class="d-block my-2 text-reset text-decoration-none" href="index.html">Home</a>
+                <a class="d-block my-2 text-reset text-decoration-none" href="about.html">About us</a>
+                <a class="d-block my-2 text-reset text-decoration-none" href="services.html">Our Services</a>
+                <a class="d-block my-2 text-reset text-decoration-none" href="contact.html">Contact us</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+              <h5 class="fw-bold">Contact us</h5>
+              <div class="mt-4">
+                <div class="my-1 d-flex">
+                  <iconify-icon icon="clarity:map-marker-solid" width="20"></iconify-icon>
+                  <div class="ms-3">
+                      <p>1099 W 133rd Way Westminster, CO 80234</p>
+                  </div>
+                </div>
+                <div class="my-1 d-flex">
+                    <iconify-icon icon="bxs:phone" width="20"></iconify-icon>
+                    <div class="ms-3">
+                        <p>+1 720 843 6975</p>
+                    </div>
+                </div>
+                <div class="my-1 d-flex">
+                    <iconify-icon icon="ant-design:field-time-outlined" width="20"></iconify-icon>
+                    <div class="ms-3">
+                        <p>Mon to Sat 9am - 5pm</p>
+                    </div>
+                </div>
+                <div class="my-1">
+                    <div class="d-flex">
+                        <a target="_blank" href="https://www.facebook.com/MoGPaints/"><iconify-icon icon="akar-icons:facebook-fill" width="24"></iconify-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/mogpainting/"><iconify-icon icon="entypo-social:instagram-with-circle" width="24" class="mx-5"></iconify-icon></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=1099%20W%20133rd%20Way%20Westminster,%20CO%2080234&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style></div></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <p class="py-2 text-center mb-0 bg-secondary-200">
+        Copyright © 2022 mogpainting.com | Powered by mogpainting.com
+      </p>
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://malsup.github.io/jquery.form.js"></script> 
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/form.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
